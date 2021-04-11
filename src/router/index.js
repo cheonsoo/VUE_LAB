@@ -1,13 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "@/views/Home.vue";
-import About from "@/views/About.vue";
-// import Scroll from "@/components/InfiniteScroll/InfiniteScroll";
-import Scroll from "@/views/Scroll.vue";
-import ScrollVuex from "@/views/ScrollVuex.vue";
-import Products from "@/components/Products";
-import Menu1 from "@/components/Menu1/Menu1.vue";
-import Detail from "@/components/Detail/Detail.vue";
+const Home = () => import("@/views/Home.vue");
+const About = () => import("@/views/About.vue");
+const Scroll = () => import("@/views/Scroll.vue");
+const ScrollVuex = () => import("@/views/ScrollVuex.vue");
+const Products = () => import("@/components/Products");
+const Menu1 = () => import("@/components/Menu1/Menu1.vue");
+const Detail = () => import("@/components/Detail/Detail.vue");
 
 import store from "@/store";
 
