@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import moment from "moment";
 import ClientsCnt from "@/components/ClientsCnt";
 
 export default {
@@ -34,6 +35,9 @@ export default {
     return {
       cnt: 0
     };
+  },
+  beforeCreate() {
+    console.log(`### moment: ${moment()}`);
   },
   created() {
     console.log("[TopBar] created");
