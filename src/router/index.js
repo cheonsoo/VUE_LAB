@@ -7,6 +7,7 @@ const ScrollVuex = () => import("@/views/ScrollVuex.vue");
 const Products = () => import("@/components/Products");
 const Menu1 = () => import("@/components/Menu1/Menu1.vue");
 const Detail = () => import("@/components/Detail/Detail.vue");
+const DynamicLayout = () => import("@/components/DynamicLayout");
 
 import store from "@/store";
 
@@ -42,6 +43,11 @@ const routes = [
     path: "/detail",
     name: "DETAIL",
     component: Detail
+  },
+  {
+    path: "/dynamic",
+    name: "dynamic_layout",
+    component: DynamicLayout
   },
   {
     path: "/about",

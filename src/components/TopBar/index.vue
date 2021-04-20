@@ -3,6 +3,8 @@
     <div class="d-flex align-center">
       <router-link class="top-link" to="/">HOME</router-link>
 
+      <router-link class="top-link" to="/dynamic">DYNAMIC</router-link>
+
       <router-link class="top-link" to="/products">PRODUCTS</router-link>
 
       <router-link class="top-link" to="/scroll">SCROLL</router-link>

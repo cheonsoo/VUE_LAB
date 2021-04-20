@@ -1,0 +1,27 @@
+{
+  "component1": {
+    "name": "Component1",
+    "order": 1,
+    "toggle": 1
+  },
+  "component2": {
+    "name": "Component2",
+    "order": 2,
+    "toggle": 0
+  },
+  "component3": {
+    "name": "Component3",
+    "order": 3,
+    "toggle": 1
+  },
+  "component4": {
+    "name": "Component4",
+    "order": 4,
+    "toggle": 0
+  },
+  "component5": {
+    "name": "Component5",
+    "order": 5,
+    "toggle": 1
+  }
+}
