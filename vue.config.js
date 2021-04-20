@@ -13,6 +13,7 @@ module.exports = {
   outputDir,
   transpileDependencies: ["vuetify"],
   configureWebpack: smp.wrap({
+    devtool: "cheap-eval-source-map",
     plugins: [
       new BundleAnalyzerPlugin({
         analyzerMode: "static", // 분석결과를 파일로 저장
