@@ -1,10 +1,10 @@
-### outputDir: /Users/mansoo/Workspace/mansoo/VUE_LAB/dist.1618933813258
+### outputDir: /Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/dist.1618964576234
 
   🚀  初始化webpack配置...
       
 {
   mode: 'development',
-  context: '/Users/mansoo/Workspace/mansoo/VUE_LAB',
+  context: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB',
   node: {
     setImmediate: false,
     process: 'mock',
@@ -15,14 +15,14 @@
     child_process: 'empty'
   },
   output: {
-    path: '/Users/mansoo/Workspace/mansoo/VUE_LAB/dist.1618933813258',
+    path: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/dist.1618964576234',
     filename: 'js/[name].js',
     publicPath: '/',
     chunkFilename: 'js/[name].js'
   },
   resolve: {
     alias: {
-      '@': '/Users/mansoo/Workspace/mansoo/VUE_LAB/src',
+      '@': '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/src',
       vue$: 'vue/dist/vue.runtime.esm.js',
       moment: 'moment/src/moment'
     },
@@ -32,44 +32,43 @@
       '.jsx',
       '.vue',
       '.json',
+      '.wasm',
+      '.mjs',
+      '.js',
+      '.jsx',
+      '.vue',
+      '.json',
       '.wasm'
     ],
     modules: [
       'node_modules',
-      '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules',
-      '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/@vue/cli-service/node_modules'
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules',
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/@vue/cli-service/node_modules',
+      'node_modules',
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules',
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/@vue/cli-service/node_modules'
     ],
-    plugins: [
-      {
-        apply: function nothing() {
-          // ¯\_(ツ)_/¯
-        },
-        makePlugin: function () { /* omitted long function */ },
-        moduleLoader: function () { /* omitted long function */ },
-        topLevelLoader: {
-          apply: function nothing() {
-            // ¯\_(ツ)_/¯
-          }
-        },
-        bind: function () { /* omitted long function */ },
-        tsLoaderOptions: function () { /* omitted long function */ },
-        forkTsCheckerOptions: function () { /* omitted long function */ }
-      }
-    ]
+    plugins: {}
   },
   resolveLoader: {
     modules: [
-      '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/@vue/cli-plugin-babel/node_modules',
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/@vue/cli-plugin-babel/node_modules',
       'node_modules',
-      '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules',
-      '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/@vue/cli-service/node_modules'
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules',
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/@vue/cli-service/node_modules',
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/@vue/cli-plugin-babel/node_modules',
+      'node_modules',
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules',
+      '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/@vue/cli-service/node_modules'
     ],
     plugins: [
       {
         apply: function nothing() {
           // ¯\_(ツ)_/¯
         }
-      }
+      },
+      /* config.resolve.plugin('pnp-loaders') */
+      {}
     ]
   },
   module: {
@@ -80,20 +79,20 @@
         test: /\.vue$/,
         use: [
           {
-            loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/cache-loader/dist/cjs.js',
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/cache-loader/dist/cjs.js',
             options: {
-              cacheDirectory: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/.cache/vue-loader',
-              cacheIdentifier: '8cfa3430'
+              cacheDirectory: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/.cache/vue-loader',
+              cacheIdentifier: '4fd02c42'
             }
           },
           {
-            loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-loader/lib/index.js',
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-loader/lib/index.js',
             options: {
               compilerOptions: {
                 whitespace: 'condense'
               },
-              cacheDirectory: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/.cache/vue-loader',
-              cacheIdentifier: '8cfa3430',
+              cacheDirectory: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/.cache/vue-loader',
+              cacheIdentifier: '4fd02c42',
               transformAssetUrls: {
                 'v-app-bar': 'src',
                 'v-carousel-item': [
@@ -117,11 +116,11 @@
         test: /\.(png|jpe?g|gif|webp)(\?.*)?$/,
         use: [
           {
-            loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/url-loader/dist/cjs.js',
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/url-loader/dist/cjs.js',
             options: {
               limit: 4096,
               fallback: {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/file-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/file-loader/dist/cjs.js',
                 options: {
                   name: 'img/[name].[hash:8].[ext]'
                 }
@@ -135,7 +134,7 @@
         test: /\.(svg)(\?.*)?$/,
         use: [
           {
-            loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/file-loader/dist/cjs.js',
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/file-loader/dist/cjs.js',
             options: {
               name: 'img/[name].[hash:8].[ext]'
             }
@@ -147,11 +146,11 @@
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
         use: [
           {
-            loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/url-loader/dist/cjs.js',
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/url-loader/dist/cjs.js',
             options: {
               limit: 4096,
               fallback: {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/file-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/file-loader/dist/cjs.js',
                 options: {
                   name: 'media/[name].[hash:8].[ext]'
                 }
@@ -165,11 +164,11 @@
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/i,
         use: [
           {
-            loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/url-loader/dist/cjs.js',
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/url-loader/dist/cjs.js',
             options: {
               limit: 4096,
               fallback: {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/file-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/file-loader/dist/cjs.js',
                 options: {
                   name: 'fonts/[name].[hash:8].[ext]'
                 }
@@ -213,14 +212,14 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -230,7 +229,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -245,21 +244,21 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -274,14 +273,14 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -291,7 +290,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -305,21 +304,21 @@
           {
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -340,14 +339,14 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -357,7 +356,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -372,21 +371,21 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -401,14 +400,14 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -418,7 +417,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -432,21 +431,21 @@
           {
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -467,14 +466,14 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -484,7 +483,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -493,7 +492,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   implementation: {
@@ -552,21 +551,21 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -575,7 +574,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   implementation: {
@@ -634,14 +633,14 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -651,7 +650,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -660,7 +659,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   implementation: {
@@ -718,21 +717,21 @@
           {
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -741,7 +740,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   implementation: {
@@ -806,14 +805,14 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -823,7 +822,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -832,7 +831,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   implementation: {
@@ -894,21 +893,21 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -917,7 +916,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   implementation: {
@@ -979,14 +978,14 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -996,7 +995,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1005,7 +1004,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   implementation: {
@@ -1066,21 +1065,21 @@
           {
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1089,7 +1088,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   implementation: {
@@ -1157,14 +1156,14 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -1174,7 +1173,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1195,21 +1194,21 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1230,14 +1229,14 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -1247,7 +1246,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1267,21 +1266,21 @@
           {
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1308,14 +1307,14 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -1325,7 +1324,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1347,21 +1346,21 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1383,14 +1382,14 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -1400,7 +1399,7 @@
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1421,21 +1420,21 @@
           {
             use: [
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/vue-style-loader/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
                 }
               },
               {
-                loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1462,14 +1461,14 @@
         ],
         use: [
           {
-            loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/cache-loader/dist/cjs.js',
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/cache-loader/dist/cjs.js',
             options: {
-              cacheDirectory: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/.cache/babel-loader',
-              cacheIdentifier: '1aed326a'
+              cacheDirectory: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/.cache/babel-loader',
+              cacheIdentifier: '9149d854'
             }
           },
           {
-            loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/babel-loader/lib/index.js'
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/babel-loader/lib/index.js'
           }
         ]
       },
@@ -1479,11 +1478,11 @@
         test: /\.(vue|(j|t)sx?)$/,
         exclude: [
           /node_modules/,
-          '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/@vue/cli-service/lib'
+          '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/@vue/cli-service/lib'
         ],
         use: [
           {
-            loader: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/eslint-loader/index.js',
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/eslint-loader/index.js',
             options: {
               extensions: [
                 '.js',
@@ -1491,10 +1490,1535 @@
                 '.vue'
               ],
               cache: true,
-              cacheIdentifier: '2a28baba',
+              cacheIdentifier: '06faa258',
               emitWarning: false,
               emitError: false,
-              eslintPath: '/Users/mansoo/Workspace/mansoo/VUE_LAB/node_modules/eslint',
+              eslintPath: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/eslint',
+              formatter: undefined
+            }
+          }
+        ]
+      },
+      /* config.module.rule('vue') */
+      {
+        test: /\.vue$/,
+        use: [
+          /* config.module.rule('vue').use('cache-loader') */
+          {
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/cache-loader/dist/cjs.js',
+            options: {
+              cacheDirectory: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/.cache/vue-loader',
+              cacheIdentifier: '4fd02c42'
+            }
+          },
+          /* config.module.rule('vue').use('vue-loader') */
+          {
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-loader/lib/index.js',
+            options: {
+              compilerOptions: {
+                whitespace: 'condense'
+              },
+              cacheDirectory: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/.cache/vue-loader',
+              cacheIdentifier: '4fd02c42',
+              transformAssetUrls: {
+                'v-app-bar': 'src',
+                'v-carousel-item': [
+                  'src',
+                  'lazy-src'
+                ],
+                'v-img': [
+                  'src',
+                  'lazy-src'
+                ],
+                'v-navigation-drawer': 'src',
+                'v-parallax': 'src',
+                'v-toolbar': 'src'
+              }
+            }
+          }
+        ]
+      },
+      /* config.module.rule('images') */
+      {
+        test: /\.(png|jpe?g|gif|webp)(\?.*)?$/,
+        use: [
+          /* config.module.rule('images').use('url-loader') */
+          {
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/url-loader/dist/cjs.js',
+            options: {
+              limit: 4096,
+              fallback: {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/file-loader/dist/cjs.js',
+                options: {
+                  name: 'img/[name].[hash:8].[ext]'
+                }
+              }
+            }
+          }
+        ]
+      },
+      /* config.module.rule('svg') */
+      {
+        test: /\.(svg)(\?.*)?$/,
+        use: [
+          /* config.module.rule('svg').use('file-loader') */
+          {
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/file-loader/dist/cjs.js',
+            options: {
+              name: 'img/[name].[hash:8].[ext]'
+            }
+          }
+        ]
+      },
+      /* config.module.rule('media') */
+      {
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+        use: [
+          /* config.module.rule('media').use('url-loader') */
+          {
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/url-loader/dist/cjs.js',
+            options: {
+              limit: 4096,
+              fallback: {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/file-loader/dist/cjs.js',
+                options: {
+                  name: 'media/[name].[hash:8].[ext]'
+                }
+              }
+            }
+          }
+        ]
+      },
+      /* config.module.rule('fonts') */
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/i,
+        use: [
+          /* config.module.rule('fonts').use('url-loader') */
+          {
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/url-loader/dist/cjs.js',
+            options: {
+              limit: 4096,
+              fallback: {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/file-loader/dist/cjs.js',
+                options: {
+                  name: 'fonts/[name].[hash:8].[ext]'
+                }
+              }
+            }
+          }
+        ]
+      },
+      /* config.module.rule('pug') */
+      {
+        test: /\.pug$/,
+        oneOf: [
+          /* config.module.rule('pug').oneOf('pug-vue') */
+          {
+            resourceQuery: /vue/,
+            use: [
+              /* config.module.rule('pug').oneOf('pug-vue').use('pug-plain-loader') */
+              {
+                loader: 'pug-plain-loader'
+              }
+            ]
+          },
+          /* config.module.rule('pug').oneOf('pug-template') */
+          {
+            use: [
+              /* config.module.rule('pug').oneOf('pug-template').use('raw') */
+              {
+                loader: 'raw-loader'
+              },
+              /* config.module.rule('pug').oneOf('pug-template').use('pug-plain-loader') */
+              {
+                loader: 'pug-plain-loader'
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('css') */
+      {
+        test: /\.css$/,
+        oneOf: [
+          /* config.module.rule('css').oneOf('vue-modules') */
+          {
+            resourceQuery: /module/,
+            use: [
+              /* config.module.rule('css').oneOf('vue-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('css').oneOf('vue-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('css').oneOf('vue-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              }
+            ]
+          },
+          /* config.module.rule('css').oneOf('vue') */
+          {
+            resourceQuery: /\?vue/,
+            use: [
+              /* config.module.rule('css').oneOf('vue').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('css').oneOf('vue').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('css').oneOf('vue').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              }
+            ]
+          },
+          /* config.module.rule('css').oneOf('normal-modules') */
+          {
+            test: /\.module\.\w+$/,
+            use: [
+              /* config.module.rule('css').oneOf('normal-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('css').oneOf('normal-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('css').oneOf('normal-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              }
+            ]
+          },
+          /* config.module.rule('css').oneOf('normal') */
+          {
+            use: [
+              /* config.module.rule('css').oneOf('normal').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('css').oneOf('normal').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('css').oneOf('normal').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('postcss') */
+      {
+        test: /\.p(ost)?css$/,
+        oneOf: [
+          /* config.module.rule('postcss').oneOf('vue-modules') */
+          {
+            resourceQuery: /module/,
+            use: [
+              /* config.module.rule('postcss').oneOf('vue-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('postcss').oneOf('vue-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('postcss').oneOf('vue-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              }
+            ]
+          },
+          /* config.module.rule('postcss').oneOf('vue') */
+          {
+            resourceQuery: /\?vue/,
+            use: [
+              /* config.module.rule('postcss').oneOf('vue').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('postcss').oneOf('vue').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('postcss').oneOf('vue').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              }
+            ]
+          },
+          /* config.module.rule('postcss').oneOf('normal-modules') */
+          {
+            test: /\.module\.\w+$/,
+            use: [
+              /* config.module.rule('postcss').oneOf('normal-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('postcss').oneOf('normal-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('postcss').oneOf('normal-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              }
+            ]
+          },
+          /* config.module.rule('postcss').oneOf('normal') */
+          {
+            use: [
+              /* config.module.rule('postcss').oneOf('normal').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('postcss').oneOf('normal').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('postcss').oneOf('normal').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('scss') */
+      {
+        test: /\.scss$/,
+        oneOf: [
+          /* config.module.rule('scss').oneOf('vue-modules') */
+          {
+            resourceQuery: /module/,
+            use: [
+              /* config.module.rule('scss').oneOf('vue-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('scss').oneOf('vue-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('scss').oneOf('vue-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('scss').oneOf('vue-modules').use('sass-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  implementation: {
+                    render: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    renderSync: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    info: 'dart-sass\t1.32.4\t(Sass Compiler)\t[Dart]\ndart2js\t2.10.4\t(Dart Compiler)\t[Dart]',
+                    types: {
+                      Boolean: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Color: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      List: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Map: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Null: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Number: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      String: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Error: function Error() { [native code] }
+                    },
+                    NULL: {
+                      toString: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      }
+                    },
+                    TRUE: {
+                      value: true
+                    },
+                    FALSE: {
+                      value: false
+                    },
+                    cli_pkg_main_0_: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          /* config.module.rule('scss').oneOf('vue') */
+          {
+            resourceQuery: /\?vue/,
+            use: [
+              /* config.module.rule('scss').oneOf('vue').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('scss').oneOf('vue').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('scss').oneOf('vue').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('scss').oneOf('vue').use('sass-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  implementation: {
+                    render: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    renderSync: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    info: 'dart-sass\t1.32.4\t(Sass Compiler)\t[Dart]\ndart2js\t2.10.4\t(Dart Compiler)\t[Dart]',
+                    types: {
+                      Boolean: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Color: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      List: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Map: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Null: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Number: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      String: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Error: function Error() { [native code] }
+                    },
+                    NULL: {
+                      toString: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      }
+                    },
+                    TRUE: {
+                      value: true
+                    },
+                    FALSE: {
+                      value: false
+                    },
+                    cli_pkg_main_0_: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          /* config.module.rule('scss').oneOf('normal-modules') */
+          {
+            test: /\.module\.\w+$/,
+            use: [
+              /* config.module.rule('scss').oneOf('normal-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('scss').oneOf('normal-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('scss').oneOf('normal-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('scss').oneOf('normal-modules').use('sass-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  implementation: {
+                    render: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    renderSync: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    info: 'dart-sass\t1.32.4\t(Sass Compiler)\t[Dart]\ndart2js\t2.10.4\t(Dart Compiler)\t[Dart]',
+                    types: {
+                      Boolean: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Color: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      List: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Map: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Null: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Number: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      String: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Error: function Error() { [native code] }
+                    },
+                    NULL: {
+                      toString: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      }
+                    },
+                    TRUE: {
+                      value: true
+                    },
+                    FALSE: {
+                      value: false
+                    },
+                    cli_pkg_main_0_: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          /* config.module.rule('scss').oneOf('normal') */
+          {
+            use: [
+              /* config.module.rule('scss').oneOf('normal').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('scss').oneOf('normal').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('scss').oneOf('normal').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('scss').oneOf('normal').use('sass-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  implementation: {
+                    render: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    renderSync: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    info: 'dart-sass\t1.32.4\t(Sass Compiler)\t[Dart]\ndart2js\t2.10.4\t(Dart Compiler)\t[Dart]',
+                    types: {
+                      Boolean: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Color: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      List: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Map: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Null: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Number: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      String: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Error: function Error() { [native code] }
+                    },
+                    NULL: {
+                      toString: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      }
+                    },
+                    TRUE: {
+                      value: true
+                    },
+                    FALSE: {
+                      value: false
+                    },
+                    cli_pkg_main_0_: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('sass') */
+      {
+        test: /\.sass$/,
+        oneOf: [
+          /* config.module.rule('sass').oneOf('vue-modules') */
+          {
+            resourceQuery: /module/,
+            use: [
+              /* config.module.rule('sass').oneOf('vue-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('sass').oneOf('vue-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('sass').oneOf('vue-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('sass').oneOf('vue-modules').use('sass-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  implementation: {
+                    render: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    renderSync: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    info: 'dart-sass\t1.32.4\t(Sass Compiler)\t[Dart]\ndart2js\t2.10.4\t(Dart Compiler)\t[Dart]',
+                    types: {
+                      Boolean: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Color: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      List: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Map: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Null: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Number: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      String: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Error: function Error() { [native code] }
+                    },
+                    NULL: {
+                      toString: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      }
+                    },
+                    TRUE: {
+                      value: true
+                    },
+                    FALSE: {
+                      value: false
+                    },
+                    cli_pkg_main_0_: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    }
+                  },
+                  sassOptions: {
+                    indentedSyntax: true
+                  }
+                }
+              }
+            ]
+          },
+          /* config.module.rule('sass').oneOf('vue') */
+          {
+            resourceQuery: /\?vue/,
+            use: [
+              /* config.module.rule('sass').oneOf('vue').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('sass').oneOf('vue').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('sass').oneOf('vue').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('sass').oneOf('vue').use('sass-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  implementation: {
+                    render: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    renderSync: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    info: 'dart-sass\t1.32.4\t(Sass Compiler)\t[Dart]\ndart2js\t2.10.4\t(Dart Compiler)\t[Dart]',
+                    types: {
+                      Boolean: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Color: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      List: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Map: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Null: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Number: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      String: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Error: function Error() { [native code] }
+                    },
+                    NULL: {
+                      toString: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      }
+                    },
+                    TRUE: {
+                      value: true
+                    },
+                    FALSE: {
+                      value: false
+                    },
+                    cli_pkg_main_0_: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    }
+                  },
+                  sassOptions: {
+                    indentedSyntax: true
+                  }
+                }
+              }
+            ]
+          },
+          /* config.module.rule('sass').oneOf('normal-modules') */
+          {
+            test: /\.module\.\w+$/,
+            use: [
+              /* config.module.rule('sass').oneOf('normal-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('sass').oneOf('normal-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('sass').oneOf('normal-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('sass').oneOf('normal-modules').use('sass-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  implementation: {
+                    render: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    renderSync: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    info: 'dart-sass\t1.32.4\t(Sass Compiler)\t[Dart]\ndart2js\t2.10.4\t(Dart Compiler)\t[Dart]',
+                    types: {
+                      Boolean: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Color: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      List: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Map: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Null: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Number: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      String: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Error: function Error() { [native code] }
+                    },
+                    NULL: {
+                      toString: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      }
+                    },
+                    TRUE: {
+                      value: true
+                    },
+                    FALSE: {
+                      value: false
+                    },
+                    cli_pkg_main_0_: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    }
+                  },
+                  sassOptions: {
+                    indentedSyntax: true
+                  }
+                }
+              }
+            ]
+          },
+          /* config.module.rule('sass').oneOf('normal') */
+          {
+            use: [
+              /* config.module.rule('sass').oneOf('normal').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('sass').oneOf('normal').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('sass').oneOf('normal').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('sass').oneOf('normal').use('sass-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/sass-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  implementation: {
+                    render: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    renderSync: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    },
+                    info: 'dart-sass\t1.32.4\t(Sass Compiler)\t[Dart]\ndart2js\t2.10.4\t(Dart Compiler)\t[Dart]',
+                    types: {
+                      Boolean: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Color: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      List: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Map: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Null: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      },
+                      Number: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      String: function () {
+                        return _call(f, this, Array.prototype.slice.apply(arguments));
+                      },
+                      Error: function Error() { [native code] }
+                    },
+                    NULL: {
+                      toString: function () {
+                        return _call(f, Array.prototype.slice.apply(arguments));
+                      }
+                    },
+                    TRUE: {
+                      value: true
+                    },
+                    FALSE: {
+                      value: false
+                    },
+                    cli_pkg_main_0_: function () {
+                      return _call(f, Array.prototype.slice.apply(arguments));
+                    }
+                  },
+                  sassOptions: {
+                    indentedSyntax: true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('less') */
+      {
+        test: /\.less$/,
+        oneOf: [
+          /* config.module.rule('less').oneOf('vue-modules') */
+          {
+            resourceQuery: /module/,
+            use: [
+              /* config.module.rule('less').oneOf('vue-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('less').oneOf('vue-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('less').oneOf('vue-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('less').oneOf('vue-modules').use('less-loader') */
+              {
+                loader: 'less-loader',
+                options: {
+                  sourceMap: false
+                }
+              }
+            ]
+          },
+          /* config.module.rule('less').oneOf('vue') */
+          {
+            resourceQuery: /\?vue/,
+            use: [
+              /* config.module.rule('less').oneOf('vue').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('less').oneOf('vue').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('less').oneOf('vue').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('less').oneOf('vue').use('less-loader') */
+              {
+                loader: 'less-loader',
+                options: {
+                  sourceMap: false
+                }
+              }
+            ]
+          },
+          /* config.module.rule('less').oneOf('normal-modules') */
+          {
+            test: /\.module\.\w+$/,
+            use: [
+              /* config.module.rule('less').oneOf('normal-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('less').oneOf('normal-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('less').oneOf('normal-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('less').oneOf('normal-modules').use('less-loader') */
+              {
+                loader: 'less-loader',
+                options: {
+                  sourceMap: false
+                }
+              }
+            ]
+          },
+          /* config.module.rule('less').oneOf('normal') */
+          {
+            use: [
+              /* config.module.rule('less').oneOf('normal').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('less').oneOf('normal').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('less').oneOf('normal').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('less').oneOf('normal').use('less-loader') */
+              {
+                loader: 'less-loader',
+                options: {
+                  sourceMap: false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('stylus') */
+      {
+        test: /\.styl(us)?$/,
+        oneOf: [
+          /* config.module.rule('stylus').oneOf('vue-modules') */
+          {
+            resourceQuery: /module/,
+            use: [
+              /* config.module.rule('stylus').oneOf('vue-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('stylus').oneOf('vue-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('stylus').oneOf('vue-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('stylus').oneOf('vue-modules').use('stylus-loader') */
+              {
+                loader: 'stylus-loader',
+                options: {
+                  sourceMap: false,
+                  preferPathResolver: 'webpack'
+                }
+              }
+            ]
+          },
+          /* config.module.rule('stylus').oneOf('vue') */
+          {
+            resourceQuery: /\?vue/,
+            use: [
+              /* config.module.rule('stylus').oneOf('vue').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('stylus').oneOf('vue').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('stylus').oneOf('vue').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('stylus').oneOf('vue').use('stylus-loader') */
+              {
+                loader: 'stylus-loader',
+                options: {
+                  sourceMap: false,
+                  preferPathResolver: 'webpack'
+                }
+              }
+            ]
+          },
+          /* config.module.rule('stylus').oneOf('normal-modules') */
+          {
+            test: /\.module\.\w+$/,
+            use: [
+              /* config.module.rule('stylus').oneOf('normal-modules').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('stylus').oneOf('normal-modules').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2,
+                  modules: {
+                    localIdentName: '[name]_[local]_[hash:base64:5]'
+                  }
+                }
+              },
+              /* config.module.rule('stylus').oneOf('normal-modules').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('stylus').oneOf('normal-modules').use('stylus-loader') */
+              {
+                loader: 'stylus-loader',
+                options: {
+                  sourceMap: false,
+                  preferPathResolver: 'webpack'
+                }
+              }
+            ]
+          },
+          /* config.module.rule('stylus').oneOf('normal') */
+          {
+            use: [
+              /* config.module.rule('stylus').oneOf('normal').use('vue-style-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/vue-style-loader/index.js',
+                options: {
+                  sourceMap: false,
+                  shadowMode: false
+                }
+              },
+              /* config.module.rule('stylus').oneOf('normal').use('css-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  sourceMap: false,
+                  importLoaders: 2
+                }
+              },
+              /* config.module.rule('stylus').oneOf('normal').use('postcss-loader') */
+              {
+                loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/postcss-loader/src/index.js',
+                options: {
+                  sourceMap: false,
+                  plugins: [
+                    function () { /* omitted long function */ }
+                  ]
+                }
+              },
+              /* config.module.rule('stylus').oneOf('normal').use('stylus-loader') */
+              {
+                loader: 'stylus-loader',
+                options: {
+                  sourceMap: false,
+                  preferPathResolver: 'webpack'
+                }
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('js') */
+      {
+        test: /\.m?jsx?$/,
+        exclude: [
+          function () { /* omitted long function */ }
+        ],
+        use: [
+          /* config.module.rule('js').use('cache-loader') */
+          {
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/cache-loader/dist/cjs.js',
+            options: {
+              cacheDirectory: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/.cache/babel-loader',
+              cacheIdentifier: '9149d854'
+            }
+          },
+          /* config.module.rule('js').use('babel-loader') */
+          {
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/babel-loader/lib/index.js'
+          }
+        ]
+      },
+      /* config.module.rule('eslint') */
+      {
+        enforce: 'pre',
+        test: /\.(vue|(j|t)sx?)$/,
+        exclude: [
+          /node_modules/,
+          '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/@vue/cli-service/lib'
+        ],
+        use: [
+          /* config.module.rule('eslint').use('eslint-loader') */
+          {
+            loader: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/eslint-loader/index.js',
+            options: {
+              extensions: [
+                '.js',
+                '.jsx',
+                '.vue'
+              ],
+              cache: true,
+              cacheIdentifier: '06faa258',
+              emitWarning: false,
+              emitError: false,
+              eslintPath: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/node_modules/eslint',
               formatter: undefined
             }
           }
@@ -1507,7 +3031,7 @@
       cacheGroups: {
         vendors: {
           name: 'chunk-vendors',
-          test: /[\\/]node_modules[\\/]/,
+          test: /[\\\/]node_modules[\\\/]/,
           priority: -10,
           chunks: 'initial'
         },
@@ -1565,7 +3089,46 @@
             }
           }
         }
-      }
+      },
+      /* config.optimization.minimizer('terser') */
+      new TerserPlugin(
+        {
+          terserOptions: {
+            compress: {
+              arrows: false,
+              collapse_vars: false,
+              comparisons: false,
+              computed_props: false,
+              hoist_funs: false,
+              hoist_props: false,
+              hoist_vars: false,
+              inline: false,
+              loops: false,
+              negate_iife: false,
+              properties: false,
+              reduce_funcs: false,
+              reduce_vars: false,
+              switches: false,
+              toplevel: false,
+              typeofs: false,
+              booleans: true,
+              if_return: true,
+              sequences: true,
+              unused: true,
+              conditionals: true,
+              dead_code: true,
+              evaluate: true
+            },
+            mangle: {
+              safari10: true
+            }
+          },
+          sourceMap: true,
+          cache: true,
+          parallel: true,
+          extractComments: false
+        }
+      )
     ]
   },
   plugins: [
@@ -1598,7 +3161,7 @@
       {
         title: 'second-vue-app',
         templateParameters: function () { /* omitted long function */ },
-        template: '/Users/mansoo/Workspace/mansoo/VUE_LAB/public/index.html'
+        template: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/public/index.html'
       }
     ),
     /* config.plugin('preload') */
@@ -1623,8 +3186,8 @@
     new CopyPlugin(
       [
         {
-          from: '/Users/mansoo/Workspace/mansoo/VUE_LAB/public',
-          to: '/Users/mansoo/Workspace/mansoo/VUE_LAB/dist.1618933813258',
+          from: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/public',
+          to: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/dist.1618964576234',
           toType: 'dir',
           ignore: [
             '.DS_Store',
@@ -1639,38 +3202,85 @@
     /* config.plugin('VuetifyLoaderPlugin') */
     new VuetifyLoaderPlugin(),
     {
-      opts: {
-        analyzerMode: 'server',
-        analyzerHost: '127.0.0.1',
-        reportFilename: null,
-        reportTitle: function () { /* omitted long function */ },
-        defaultSizes: 'parsed',
-        openAnalyzer: true,
-        generateStatsFile: false,
-        statsFilename: 'stats.json',
-        statsOptions: null,
-        excludeAssets: null,
-        logLevel: 'info',
-        startAnalyzer: true,
-        analyzerPort: 8888
-      },
-      server: null,
-      logger: {
-        activeLevels: new Set([
-          'info',
-          'warn',
-          'error',
-          'silent'
-        ])
+      options: {},
+      timeEventData: {},
+      smpPluginAdded: true,
+      wrap: function () { [native code] },
+      getOutput: function () { [native code] },
+      addTimeEvent: function () { [native code] },
+      apply: function () { [native code] },
+      provideLoaderTiming: function () { [native code] },
+      generateLoadersBuildComparison: function () { [native code] }
+    },
+    /* config.plugin('vue-loader') */
+    new VueLoaderPlugin(),
+    /* config.plugin('define') */
+    new DefinePlugin(
+      {
+        'process.env': {
+          NODE_ENV: '"development"',
+          BASE_URL: '"/"'
+        }
       }
-    },
-    {
-      options: {
-        resourceRegExp: /^\.\/locale$/,
-        contextRegExp: /moment$/
-      },
-      checkIgnore: function () { [native code] }
-    },
+    ),
+    /* config.plugin('case-sensitive-paths') */
+    new CaseSensitivePathsPlugin(),
+    /* config.plugin('friendly-errors') */
+    new FriendlyErrorsWebpackPlugin(
+      {
+        additionalTransformers: [
+          function () { /* omitted long function */ }
+        ],
+        additionalFormatters: [
+          function () { /* omitted long function */ }
+        ]
+      }
+    ),
+    /* config.plugin('html') */
+    new HtmlWebpackPlugin(
+      {
+        title: 'second-vue-app',
+        templateParameters: function () { /* omitted long function */ },
+        template: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/public/index.html'
+      }
+    ),
+    /* config.plugin('preload') */
+    new PreloadPlugin(
+      {
+        rel: 'preload',
+        include: 'initial',
+        fileBlacklist: [
+          /\.map$/,
+          /hot-update\.js$/
+        ]
+      }
+    ),
+    /* config.plugin('prefetch') */
+    new PreloadPlugin(
+      {
+        rel: 'prefetch',
+        include: 'asyncChunks'
+      }
+    ),
+    /* config.plugin('copy') */
+    new CopyPlugin(
+      [
+        {
+          from: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/public',
+          to: '/Users/cheonsoo.park/Workspace/projects/nodejs/VUE_LAB/dist.1618964576234',
+          toType: 'dir',
+          ignore: [
+            '.DS_Store',
+            {
+              glob: 'index.html',
+              matchBase: false
+            }
+          ]
+        }
+      ]
+    ),
+    /* config.plugin('VuetifyLoaderPlugin') */
+    new VuetifyLoaderPlugin(),
     {
       options: {},
       timeEventData: {},
@@ -1685,6 +3295,7 @@
   ],
   entry: {
     app: [
+      './src/main.js',
       './src/main.js'
     ]
   }
